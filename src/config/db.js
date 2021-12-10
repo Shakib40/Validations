@@ -1,9 +1,7 @@
 const mongoose = require("mongoose");
 
-require("dotenv").config();
-
 const connect = () => {
-    return mongoose.connect(`mongodb+srv://Prakhar2266:${process.env.MONGO_PASSWORD}@cluster0.pvv3v.mongodb.net/validation`)
+    return mongoose.connect("mongodb://localhost:27017/Validations")
 }
 
 module.exports = connect;
